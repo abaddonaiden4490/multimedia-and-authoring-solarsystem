@@ -9,3 +9,6 @@ HOW TO SET UP THE PROJECT!!!
 texture_dir = r"path\to\your\textures\folder"
 
 4. run script
+
+credits to the owner of the textures:
+https://www.solarsystemscope.com/textures/
