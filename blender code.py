@@ -304,13 +304,9 @@ rings.data.materials.append(mat)
 saturn_empty = bpy.data.objects["Saturn_Orbit_Center"]
 rings.parent = saturn_empty
 
-# Add lighting and camera - positioned to show entire solar system
-bpy.ops.object.light_add(type='SUN', location=(0, 0, 10))
-bpy.ops.object.camera_add(location=(0, -60, 30), rotation=(math.radians(65), 0, 0))
+# Add lighting and camera - positioned for top-down view
+bpy.ops.object.camera_add(location=(0, 0, 120), rotation=(0, 0, 0))
 bpy.context.scene.camera = bpy.context.object
-
-# Create information systems
-create_solar_system_info()
 
 print("Solar System created successfully!")
 print("Key improvements:")
