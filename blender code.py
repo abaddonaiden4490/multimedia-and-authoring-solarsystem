@@ -17,6 +17,7 @@ planet_textures = {
     "Uranus": os.path.join(texture_dir, "URANUS.jpg"),
     "Neptune": os.path.join(texture_dir, "NEPTUNE.jpg"),
     "SaturnRings": os.path.join(texture_dir, "SATURN RING.png"),
+    "Pluto": os.path.join(texture_dir, "PLUTO.jpg"),
 }
 
 # Planet information database
@@ -70,6 +71,11 @@ planet_info = {
         "description": "Neptune is the windiest planet with speeds up to 1,200 mph and a deep blue color from methane.",
         "orbital_period_days": 60190,
         "human_age_factor": 365.25 / 60190
+    },
+    "Pluto": {
+        "description": "Pluto is a dwarf planet in the Kuiper Belt, smaller than Earth's moon with a heart-shaped glacier.",
+        "orbital_period_days": 90560,
+        "human_age_factor": 365.25 / 90560
     }
 }
 
@@ -186,6 +192,7 @@ planet_data = [
     ("Saturn", 1.0, 16),
     ("Uranus", 0.7, 19),
     ("Neptune", 0.7, 22),
+    ("Pluto", 0.2, 25),  # Added Pluto with smaller size and farther orbit
 ]
 
 orbital_periods = {
@@ -197,7 +204,8 @@ orbital_periods = {
     "Jupiter": 6,    
     "Saturn": 8,     
     "Uranus": 15,     
-    "Neptune": 22  
+    "Neptune": 22,
+    "Pluto": 30,  # Longer orbital period for Pluto
 }
 
 for name, size, orbit_radius in planet_data:
